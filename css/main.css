@@ -1,0 +1,225 @@
+html {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  color: #7870cc;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+  padding: 20px 0 20px 30px;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+img {
+  background-size: cover;
+  width: 100%;
+  max-width: 480px;
+  transition: 0.6s all ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.35);
+}
+
+img:hover + figcaption {
+  display: none;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin-top: 20px;
+}
+
+section {
+  background-color: white;
+  position: relative;
+  margin-top: 5vh;
+  -webkit-box-shadow: 0px 0px 40px -5px #cccccc;
+  -moz-box-shadow: 0px 0px 40px -5px #cccccc;
+  box-shadow: 0px 0px 40px -5px #cccccc;
+}
+
+article {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
+figure {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+figcaption {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+.top {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2em;
+  transition: 0.3s ease-in-out;
+}
+
+.top:hover {
+  color: #7870cc;
+}
+
+.desktopNav {
+  display: inline-block;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  flex-flow: column;
+}
+
+nav {
+  margin-top: 5vh;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  color: #7870cc;
+}
+
+input[type="text"] {
+  padding: 12px;
+  margin-right: 10px;
+  width: 350px;
+  color: #7870cc;
+  border: 1px solid rgba(120, 112, 204, 0.6);
+  -webkit-box-shadow: 0px 9px 9px -5px rgba(120, 112, 204, 0.6);
+  -moz-box-shadow: 0px 9px 9px -5px rgba(120, 112, 204, 0.6);
+  box-shadow: 0px 9px 9px -5px rgba(120, 112, 204, 0.6);
+}
+
+button {
+  padding: 12px 40px;
+  background-color: #7870cc;
+  border: none;
+  color: white;
+  transition: 0.3s all ease-in-out;
+  -webkit-box-shadow: 0px 9px 9px -5px rgba(120, 112, 204, 0.6);
+  -moz-box-shadow: 0px 9px 9px -5px rgba(120, 112, 204, 0.6);
+  box-shadow: 0px 9px 9px -5px rgba(120, 112, 204, 0.6);
+}
+
+button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 18px 9px -10px rgba(120, 112, 204, 0.6);
+  -moz-box-shadow: 0px 18px 9px -10px rgba(120, 112, 204, 0.6);
+  box-shadow: 0px 18px 9px -10px rgba(120, 112, 204, 0.6);
+  transform: translate(0px, -5px) scale(1.1);
+}
+
+.mobileNav {
+  display: none;
+}
+
+.formulario {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 545px), only screen and (max-width: 375px) {
+  header h1 {
+    font-size: 3em;
+    margin-top: 7vh;
+  }
+  header input[type="text"] {
+    width: 80%;
+  }
+  header button {
+    margin-top: 20px;
+    width: 80%;
+  }
+  header .formulario {
+    margin: 30px auto 0 auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header input[type="text"] {
+    width: 100%;
+  }
+  header button {
+    margin-top: 20px;
+    width: 100%;
+  }
+  h2 {
+    padding-top: 30px;
+  }
+  section {
+    margin: 0;
+  }
+  .desktopNav {
+    display: none;
+  }
+  .mobileNav {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-size: 1.4em;
+    color: white;
+    z-index: 2;
+  }
+  .mobileNav:hover {
+    cursor: pointer;
+  }
+  .mobileNav li a {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  figure {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,17 @@
+$verde-primario: #04b486;
+$verde-secundario: #a9f5d0;
+$gris: #cccccc;
+$gris-oscuro: #666666;
+$lila: #7870cc;
+$negro: #2e2e2e;
+$negro-opacidad: rgba(255, 255, 255, .4);
+@mixin box-shadow($shadow){
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+$mq-responsive: "only screen and (max-width: 1600px)";
+$mq-600-down: "only screen and (max-width: 600px)";
+$mq-nexus5x: "only screen and (max-width: 545px)";
+$mq-iphone6: "only screen and (max-width: 375px)";

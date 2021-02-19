@@ -1,0 +1,76 @@
+
+@media #{$mq-nexus5x}, #{$mq-iphone6}{
+  header{
+    h1{
+      font-size: 3em;
+      margin-top: 7vh;
+    }
+
+    input[type="text"]{
+      width: 80%;
+    }
+
+    button{
+      margin-top: 20px;
+      width: 80%;
+    }
+
+    .formulario{
+      margin: 30px auto 0 auto;
+    }
+  }
+}
+
+
+
+@media #{$mq-600-down}{
+
+  header{
+    input[type="text"]{
+      width: 100%;
+    }
+
+    button{
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+
+  h2{
+    padding-top: 30px;
+  }
+
+  section{
+    margin: 0;
+  }
+
+  .desktopNav{
+    display: none;
+  }
+
+  .mobileNav{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-size: 1.4em;;
+    color: white;
+    z-index: 2;
+    &:hover{
+      cursor: pointer;
+    }
+
+    li{
+      a{
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
+@media #{$mq-responsive}{
+
+  figure{
+    margin: 0 auto;
+  }
+}

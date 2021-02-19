@@ -1,0 +1,56 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  flex-flow: column;
+}
+
+nav{
+  margin-top: 5vh;
+
+  li{
+    display: inline;
+
+    a{
+      margin-right: 10px;
+      font-weight: bold;
+
+      &:hover{
+        color: $lila;
+      }
+    }
+  }
+}
+
+input[type="text"]{
+  padding: 12px;
+  margin-right: 10px;
+  width: 350px;
+  color: $lila;
+  border: 1px solid rgba(120, 112, 204, .6);
+  @include box-shadow(0px 9px 9px -5px rgba(120, 112, 204, .6));
+}
+
+button{
+  padding: 12px 40px;
+  background-color: $lila;
+  border: none;
+  color: white;
+  transition: 0.3s all ease-in-out;
+  @include box-shadow(0px 9px 9px -5px rgba(120, 112, 204, .6));
+
+  &:hover{
+    cursor: pointer;
+    @include box-shadow(0px 18px 9px -10px rgba(120, 112, 204, .6));
+    transform: translate(0px, -5px) scale(1.1);
+  }
+}
+
+.mobileNav{
+  display: none;
+}
+
+.formulario{
+  margin-top: 30px;
+}
